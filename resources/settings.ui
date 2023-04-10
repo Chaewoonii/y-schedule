@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>392</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: white;
+}
+
+QLabel{
+	font: 12pt &quot;KoPub돋움체 Light&quot;;
+}
+QPushButton { 
+	color: #575e6b;
+	background-color: #f7faff;
+	border: 1px solid #f7faff;
+	border-radius: 5px;
+	font: 10pt &quot;KoPub돋움체 Light&quot;;
+}
+QPushButton:hover{ 
+	color: #f7faff;
+	border: 1px solid #575e6b;
+	background-color: #575e6b;
+}
+
+QRadioButton{
+	font: 10pt &quot;KoPub돋움체 Light&quot;;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>351</width>
+     <height>283</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>기간 설정</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QDateTimeEdit" name="dateTimeEdit1">
+        <property name="styleSheet">
+         <string notr="true">min-width: 200px;
+min-height: 25px;
+font: 10pt &quot;KoPub돋움체 Light&quot;;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>부터</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QDateTimeEdit" name="dateTimeEdit2">
+        <property name="styleSheet">
+         <string notr="true">min-width: 200px;
+min-height: 25px;
+font: 10pt &quot;KoPub돋움체 Light&quot;;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>까지</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">max-width: 300px;</string>
+        </property>
+        <property name="text">
+         <string>조건항목</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delCondiBtn">
+        <property name="styleSheet">
+         <string notr="true">max-width:25px;</string>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="condiRbtnGBox"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">max-width:300px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addCondiBtn">
+        <property name="styleSheet">
+         <string notr="true">max-width:25px;</string>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="okBtn">
+        <property name="text">
+         <string>확인</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelBtn">
+        <property name="text">
+         <string>취소</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

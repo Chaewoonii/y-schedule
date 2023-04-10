@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QDialog" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>880</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#main{
+	background-color: white;
+}
+QPushButton { 
+	color: #575e6b;
+	background-color: #f7faff;
+	border-radius: 5px;
+	font:12pt &quot;KoPub돋움체 Light&quot;;
+}
+
+QPushButton:hover{ 
+	color: #f7faff;
+	background-color: #575e6b;
+}
+QCalendarWidget QToolButton{
+	color: #575e6b;
+}
+#qt_calendar_navigationbar {
+	color: #575e6b;
+    background: #f7faff;
+	font-size: 16px;
+	font-color: #575e6b;
+}
+
+QTableView#today, QTableView#weeks{
+	border: none;
+	background-color: #f7faff;
+}
+
+QLabel{
+	color: #575e6b;
+	font: 15pt &quot;KoPub돋움체 Light&quot;;
+	align: center;
+}
+
+QVBoxLayout#today QPushButton#pushButton{
+		min-height: 35px;
+}
+
+</string>
+  </property>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>60</y>
+     <width>351</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>KoPub돋움체 Light</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="gridVisible">
+    <bool>false</bool>
+   </property>
+   <property name="horizontalHeaderFormat">
+    <enum>QCalendarWidget::ShortDayNames</enum>
+   </property>
+   <property name="verticalHeaderFormat">
+    <enum>QCalendarWidget::NoVerticalHeader</enum>
+   </property>
+   <property name="dateEditEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="dateEditAcceptDelay">
+    <number>1500</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>50</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>KoPub돋움체 Light</family>
+     <pointsize>15</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>오늘의 일정</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>100</y>
+     <width>521</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="today"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>450</y>
+     <width>1021</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vBoxGraph"/>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>400</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>방문</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>160</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="vLayout_btns">
+    <item>
+     <widget class="QPushButton" name="getScheduleBtn">
+      <property name="font">
+       <font>
+        <family>KoPub돋움체 Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 20px;
+min-height: 40px;</string>
+      </property>
+      <property name="text">
+       <string>불러오기</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="monthlyBtn">
+      <property name="font">
+       <font>
+        <family>KoPub돋움체 Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 20px;
+min-height: 40px;</string>
+      </property>
+      <property name="text">
+       <string>월간 달력</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="scheduleAnalysisBtn">
+      <property name="font">
+       <font>
+        <family>KoPub돋움체 Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 20px;
+min-height: 40px;</string>
+      </property>
+      <property name="text">
+       <string>스케줄 분석</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="settingsBtn">
+      <property name="styleSheet">
+       <string notr="true">border-radius: 20px;
+min-height: 40px;</string>
+      </property>
+      <property name="text">
+       <string>설정 ⚙</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

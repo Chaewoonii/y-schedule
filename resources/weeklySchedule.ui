@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1186</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: white;
+}
+QPushButton { 
+	color: #575e6b;
+	background-color: #f7faff;
+	border-radius: 20px;
+	height: 35px;
+	font: 12pt &quot;KoPub돋움체 Light&quot;;
+}
+QPushButton:hover{ 
+	color: #f7faff;
+	background-color: #575e6b;
+}
+QCalendarWidget QToolButton{
+	color: #575e6b;
+}
+#qt_calendar_navigationbar {
+	color: #575e6b;
+    background: #f7faff;
+	font-size: 16px;
+	font-color: #575e6b;
+}
+
+QTableView#today, QTableView#weeks{
+	border: none;
+	background-color: #f7faff;
+}
+
+QLabel{
+	color: #575e6b;
+	font: 15pt &quot;KoPub돋움체 Light&quot;;
+	align: center;
+}
+
+QVBoxLayout#today QPushButton#pushButton{
+		min-height: 35px;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>30</y>
+     <width>172</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="monthlyBtn">
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>월간</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="weekelyBtn">
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>주간</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>30</y>
+     <width>172</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QPushButton" name="prevBtn">
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nextBtn">
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="homeBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>24</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string>HOME</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>1141</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_sunday">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>일</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_mon">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>월</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_tue">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>화</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_wed">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>수</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_thur">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>목</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_fri">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>금</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="vLayout_sunday_7">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>토</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

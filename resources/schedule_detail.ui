@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: white;
+}
+
+QLabel{
+	font: 11pt &quot;KoPub돋움체 Light&quot;;
+	color: #575e6b;
+}
+
+QLineEdit{
+	border: none;
+	background-color:  #f7faff;
+	border-radious: 15px;
+	min-height: 25px;
+}
+
+QDateEdit, QTimeEdit, QDateTimeEdit, QSpinBox{
+	min-height: 20px;
+	background-color: :  #f7faff;
+	color:  #575e6b;
+	font: 10pt &quot;KoPub돋움체 Light&quot;;
+}
+
+QPushButton{
+	color: #f7faff;
+	background-color: #575e6b;
+	border-radius: 20px;
+	height: 30px;
+	font: 12pt &quot;KoPub돋움체 Light&quot;;
+}
+
+QPushButton:hover{ 
+	color: #575e6b;
+	background-color: #f7faff;
+}
+
+QComboBox{
+	background-color:white;
+	font: 11pt &quot;KoPub돋움체 Light&quot;;
+	color: #575e6b;
+	border: 1px solid #f7faff;
+	min-height: 25px
+}
+</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>381</width>
+     <height>323</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>날짜</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>시간</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>동</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>참석인원</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QComboBox" name="comboBox_dong">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <item>
+         <property name="text">
+          <string>관평동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>구즉동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>노은1동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>노은2동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>노은3동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>상대동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>신성동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>온천1동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>온천2동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>원신흥동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>전민동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>진잠동</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>학하동</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QSpinBox" name="spinBox"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTimeEdit" name="timeEdit"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>행사명</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="event_detail"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="2" column="0">
+       <widget class="QComboBox" name="comboBox_group">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>17</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>단체</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>장소</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="loc_detail"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="1">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>담당자</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>연락처</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="manager_detail"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="phone_detail"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="detailModifyBtn">
+        <property name="text">
+         <string>수정</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="detailCancelBtn">
+        <property name="text">
+         <string>취소</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
